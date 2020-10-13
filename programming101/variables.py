@@ -6,9 +6,11 @@ print(my_name)
 print("Hello everyone")
 first_name = "Shoel" 
 last_name = "Uddin"
+
 print("My name is :")
 print(first_name)
 print(last_name)
+
 age = "30"
 print("I am :")
 print(age)
