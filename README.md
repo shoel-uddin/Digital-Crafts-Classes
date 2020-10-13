@@ -20,3 +20,4 @@
 2. [Hello World Practice]()
 3. [Variables]()
 4. [Numbers]()
+5. [Strings]()
