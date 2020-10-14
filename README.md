@@ -22,3 +22,13 @@
 4. [Numbers]()
 5. [Strings]()
 6. [Conditions]()
+
+# Day 3
+
+## Objectives
+- Learn more within py
+
+1. [User Input]()
+2. [Else If]()
+3. [Nesting]()
+4. [Multiples]()
