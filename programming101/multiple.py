@@ -7,7 +7,7 @@ if num > 3 and num < 15:
     else:
         print("It's an ok length")
         
-    print(f"Welcme {name}")
+    print(f"Welcome {name}")
 else:
     print('%s is too few characters' % len(name))
 
