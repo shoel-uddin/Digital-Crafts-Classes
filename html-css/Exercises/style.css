@@ -1,0 +1,21 @@
+h1 {
+    text-decoration: underline; color: saddlebrown;
+}
+
+.main-content {
+    background: rgb(228, 230, 120); 
+    color: steelblue;
+    font-size: 20px;
+}
+
+a {
+    background: white;
+    
+}
+a:hover {
+    background-color: coral;
+
+}
+.contact1 {
+    margin-left: 50px;
+}
