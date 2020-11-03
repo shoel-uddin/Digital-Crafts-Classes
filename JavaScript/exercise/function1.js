@@ -17,3 +17,11 @@ function number ( num1, num2, num3){
 
 
 console.log(number ( 2, 5, 8))
+
+
+const doSomething = function (a,b,c){
+    return a+b+c
+
+}
+let res = doSomething ('I', ' am ', 1)
+console.log (res)

@@ -6,21 +6,36 @@
 // call the function again with a different function as the argument.
 
 
-const anonymousFunction = function(single){
-    console.log (" Is this it?");
-}
+// const anonymousFunction = function(single){
+//     console.log (" Is this it?");
+// }
 
-function newFunction (emptyFunction, number){
-    let i = 0;
-    while (i <= number){
-        console.log(i);
-        i++;
+// function newFunction (emptyFunction, number){
+//     let i = 0;
+//     while (i <= number){
+//         console.log(i);
+//         i++;
+//     }
+//     emptyFunction();
+// }
+
+// newFunction(anonymousFunction, 10)
+
+// newFunction(function(){
+//     console.log("Differnt Function");
+// })
+
+const nextFunc = function (subFunc, aNumber){
+    for ( let i = 0; i <= aNumber; i++){
+        console.log(i)
     }
-    emptyFunction();
+    subFunc()
 }
 
-newFunction(anonymousFunction, 10)
+nextFunc( function(){
+    console.log('yee haw')
+}, 10)
 
-newFunction(function(){
-    console.log("Differnt Function");
-})
+nextFunc( function(){
+    console.log('yep yep')
+}, 5)
