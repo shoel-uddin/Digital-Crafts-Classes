@@ -20,18 +20,27 @@ let result = a == 11 ? 'yes' : "guess again"
 
 result 
 
-if (a>5) console.log ('yep its more than 5')
+// if (a>5) console.log ('yep its more than 5')
 
-switch (a) {
-    case 20:
-        console.log('a is 20')
+// switch (a) {
+//     case 20:
+//         console.log('a is 20')
+//         break;
+//     case 15:
+//         console.log('a is 15')
+//         break;
+//     case 10:
+//         console.log('a is 10')
+//         break;
+//     default:
+//         console.log("I really don't know")
+// }
+
+switch (true) {
+    case false:
+        console.log ('its false')
         break;
-    case 15:
-        console.log('a is 15')
-        break;
-    case 10:
-        console.log('a is 10')
-        break;
-    default:
-        console.log("I really don't know")
+    case true:
+       console.log('its true')
+       break;
 }
