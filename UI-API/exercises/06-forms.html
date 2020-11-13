@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="login">
+        <input name="username">
+        <input name="password" type="password">
+        <input name="agree" checked type="checkbox">Agree to terms?
+        <button>Login</button>
+    </form>
+    <script>
+        let loginForm = document.querySelector("#login")
+        loginForm.addEventListener("submit",(evt)=>{
+            evt.preventDefault()            
+            let results = [...evt.target.elements]
+                //.filter(el=>el.name)
+                .map(el=>({name:el.name, value:el.value}))
+                console.log(results)
+            let d = document.createElement("div")
+            for (let i = 0; i < results.length; i++)
+            d.append(results[i].name, ":", results[i].value)
+            document.body.append(d)
+        })
+
+        let newEmail = document.createElement("input")
+        newEmail.setAttribute("name", "e-mail")
+        newEmail.setAttribute("placeholder", "Email")
+        loginForm.append(newEmail)
+
+        let newDate = document.createElement("input")
+        newDate.setAttribute("type", "date")
+        loginForm.append(newDate)
+
+
+    </script>
+</body>
+</html>

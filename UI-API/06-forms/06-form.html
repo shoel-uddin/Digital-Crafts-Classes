@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="login" >
+        <input name = "username">
+        <input type="password" name="password">
+        <input name="agree" checked type="checkbox"> Agree to terms?
+        <button>Login</button>
+    </form>
+    <script>
+        const formHandler = (evt)=>{
+            [...evt.target.elements]
+                .filter(el=>el.name)
+                .map(el=>({name:el.name, value:el.value}))
+        }
+
+        let loginForm = document.querySelector("#login")
+        loginForm.addEventListener("submit",(evt)=>{
+            results = formHandler(evt)
+
+            let d = document.createElement("div")
+            d.append(results[0].name, ":", results[0].value)
+            document.body.append(d)
+        })
+    </script>
+</body>
+</html>
