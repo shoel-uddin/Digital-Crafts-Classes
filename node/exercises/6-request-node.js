@@ -1,4 +1,5 @@
 const http = require("http")
+const port = 5566
 
 const server = http.createServer((req,res)=>{
 
@@ -29,6 +30,6 @@ const server = http.createServer((req,res)=>{
     res.end()
 })
 
-server.listen(5566,()=>{
-    console.log(`Running on Port ${5566}`)
+server.listen(port, ()=>{
+    console.log(`Running on Port ${port}`)
 })
