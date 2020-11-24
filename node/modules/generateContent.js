@@ -15,7 +15,7 @@ let generateContent = ({page, additional,count})=>{
         <html>
             <head>
             <title>My Selection:${page}</title>
-            <link rel="stylesheet" href="mystyle.css">
+            <link rel="stylesheet" type="text/css" href="mystyle.css">
             <head>
             <body>
                 ${navigation}

@@ -2,13 +2,7 @@ const http = require("http");
 const port = 5566
 
 const generateContent = require("./generateContent")
-const serveFavicon = require("./serveFile")
-const serveCss = require("./serveFile")
-
-
-
-
-
+const {serveFavicon, serveCss} = require("./serveFile")
 
 const server = http.createServer((req,res)=>{
 

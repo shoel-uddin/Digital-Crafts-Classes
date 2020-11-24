@@ -20,5 +20,4 @@ const serveCss = (req, res)=>{
     })
 }
 
-module.exports = serveFavicon
-module.exports = serveCss
+module.exports = {serveFavicon, serveCss}
