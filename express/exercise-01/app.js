@@ -68,3 +68,26 @@ app.get("*", send404)
 const server = http.createServer(app)
 
 server.listen(port, ()=>console.log(`listening on port ${port}`))
+
+
+// const serveContent = (title, content)=>`
+//     <!DOCTYPE html>
+//     <html> 
+//         <head> 
+//             <title>${title}</title>
+//         </head>
+//         <body>
+//             <h1>${title}</h1>
+//             <div>${content}</div>
+//         </body>
+//     </html>
+// `;
+// const serveHome = (req,res)=>{
+//     res.send(serveContent("Home"))
+// }
+// app.get("/favicon.ico", sendFavicon)
+// app.get("/",serveHome)
+// app.get("/home", serveHome)
+// app.get("/about", (req,res)=>res.send(serveContent("About", "Lets give them something to talk about.")))
+// app.get("/contact", (req,res)=>res.send(serveContent("Contact")))
+// app.get("*", send404)
