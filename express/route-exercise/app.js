@@ -17,14 +17,14 @@ app.get("/api/people", (req,res)=>{
 })
 
 //This gets the results by gender
-app.get("/api/:gender", (req,res)=>{
+app.get("/api/people/gender/:gender", (req,res)=>{
     const {gender} = req.params
-    const personGender= people.filter((person)=> person.gender == gender)
+    const personGender= people.filter(person=> person.gender == gender)
     res.send(personGender)
 })
-app.get("/api/:email", (req,res)=>{
+app.get("/api/people/email/:email", (req,res)=>{
     const {email} = req.params
-    const personEmail= people.filter((person)=> person.email == email)
+    const personEmail= people.find(person=> person.email == email)
     res.send(personEmail)
 })
 
