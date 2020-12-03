@@ -1,0 +1,5 @@
+-[X] npm init 
+-[X] npm install 
+-[] npm script 
+-[] express() function 
+-[] app.get()
