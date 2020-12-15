@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pets Page</title>
+</head>
+<body>
+    <Div>
+        ${
+            pets.map(o=>`
+            <li>
+                <a href="/pets/${o.pet}"> ${o.pet}</a>
+            </li>`).join('')
+        }
+    </Div>
+</body>
+</html>
