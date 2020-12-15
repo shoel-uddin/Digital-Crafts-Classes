@@ -34,11 +34,11 @@ app.get('/new', (req, res) => {
 <form method="POST">
   <label>
     Username:
-    <input type="username" type="text" autofocus />
+    <input name="username" type="text" autofocus />
   </label>
   <label>
     Password:
-    <input type="password" type="password" />
+    <input name="password" type="password" />
   </label> 
  <input type="submit" value="do it!" />
 </form>
